@@ -1,1 +1,132 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+/*App Component*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Search Anime Component*/
+.anime-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.anime-form input{
+    height:39px;
+    width: 800px;
+}
+
+.anime-form label{
+    margin-right: 20px;
+}
+
+.anime-form button{
+    /* height:30px; */
+    padding: 10px;
+    font-size: 25px;
+    width: 30%;
+    align-self: center;
+    margin-top: 15px;
+    background-color: orange;
+    border-radius: 15px;
+    border-style: none;
+    margin-bottom: 15px;
+}
+
+/*result-anime Component*/
+
+.results{
+    display: flex; 
+    padding: 20px;
+    border-radius: 15px;
+    /* margin-top: 25px; */
+    width: 1200px;
+    background-color: blue;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.result{
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    background-color: green;
+    /* gap: 10px; */
+    border-radius: 15px;
+    gap: 20px;
+    padding: 15px;
+}
+
+.result-img img{
+    display: block;
+    border-radius: 15px;
+}
+
+.result-img button{
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+    align-self: center;
+    margin-top: 15px;
+    background-color: orange;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.result-data, .result-data-selected{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.result-data h2, .result-data-selected h2{
+    font-size: 30px;
+    padding-left: 10px;
+    border-left: 2px solid orange;
+}
+
+/*Anime selected component*/
+
+.animes-selected{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(62, 53, 71);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.result-data-selected{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-data-selected h4{
+    margin-top: 25px;
+    font-size: 25px;
+}
+

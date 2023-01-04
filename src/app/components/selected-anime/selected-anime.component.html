@@ -1,0 +1,13 @@
+<div *ngIf="animeSelected.length > 0" class="animes-selected">
+    <div *ngFor="let anime of animeSelected" class="result">
+        <div class="result-img">
+            <img [src]="anime.image" alt="">
+        </div>
+        <div class="result-data-selected">
+            <h2>{{anime.title}}</h2>
+            <h4>Episodes: {{anime.watched}} / {{anime.episodes}}</h4>
+        </div>
+    </div>
+</div>
+
+
